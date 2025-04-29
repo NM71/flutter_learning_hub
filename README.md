@@ -1,6 +1,9 @@
 # Flutter Developer Learning Hub
 A modern, responsive web application that provides a curated collection of Flutter development resources and tutorials. This hub is designed to help Flutter developers at all skill levels find high-quality learning materials organized by category and skill level.
 
+## View Live Demo
+Visit the live site: [Flutter Developer Learning Hub](https://nm71.github.io/flutter_learning_hub/)
+
 # ✨ Features
 🎨 Modern UI/UX: Clean, intuitive interface with smooth animations
 🌓 Dark/Light Mode: Toggle between themes with preference saving
@@ -10,8 +13,7 @@ A modern, responsive web application that provides a curated collection of Flutt
 🏷️ Tag System: Visual tags to identify tutorial topics at a glance
 💾 Persistent Settings: User preferences saved between sessions
 🚀 Getting Started
-View Live Demo
-Visit the live site: [Flutter Developer Learning Hub](https://nm71.github.io/flutter_learning_hub/)
+
 
 Run Locally
 Simply clone this repository and open index.html in your browser.
