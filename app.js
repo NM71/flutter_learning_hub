@@ -37,6 +37,15 @@ function renderCards() {
     div.className = "card";
     div.style.animationDelay = `${index * 0.05}s`;
     
+    // Determine difficulty level for card styling
+    let level = "intermediate";
+    if (tutorial.category.includes("beginner")) {
+      level = "beginner";
+    } else if (tutorial.category.includes("advanced")) {
+      level = "advanced";
+    }
+    div.setAttribute("data-level", level);
+    
     const tagsHTML = tutorial.tags.map(tag => 
       `<span class="card-tag">${tag}</span>`
     ).join('');
@@ -54,6 +63,50 @@ function renderCards() {
     grid.appendChild(div);
   });
 }
+
+// function renderCards() {
+//   grid.innerHTML = "";
+  
+//   const filteredTutorials = tutorials.filter(tutorial => {
+//     const matchesSearch = tutorial.title.toLowerCase().includes(searchTerm.toLowerCase());
+//     const matchesCategory = currentFilter === "all" || tutorial.category.includes(currentFilter);
+//     return matchesSearch && matchesCategory;
+//   });
+
+//   if (filteredTutorials.length === 0) {
+//     const noResults = document.createElement("div");
+//     noResults.className = "no-results";
+//     noResults.innerHTML = `
+//       <i class="fas fa-search" style="font-size: 3rem; margin-bottom: 1rem; opacity: 0.3;"></i>
+//       <h3>No tutorials found</h3>
+//       <p>Try adjusting your search or filter criteria</p>
+//     `;
+//     grid.appendChild(noResults);
+//     return;
+//   }
+
+//   filteredTutorials.forEach((tutorial, index) => {
+//     const div = document.createElement("div");
+//     div.className = "card";
+//     div.style.animationDelay = `${index * 0.05}s`;
+    
+//     const tagsHTML = tutorial.tags.map(tag => 
+//       `<span class="card-tag">${tag}</span>`
+//     ).join('');
+    
+//     div.innerHTML = `
+//       <div class="card-content">
+//         <h3>${tutorial.title}</h3>
+//         <div class="card-tags">${tagsHTML}</div>
+//       </div>
+//       <a href="${tutorial.url}" class="card-link" target="_blank">
+//         Watch Tutorial <i class="fas fa-arrow-right"></i>
+//       </a>
+//     `;
+    
+//     grid.appendChild(div);
+//   });
+// }
 
 function setActiveFilter(filter) {
   filterBtns.forEach(btn => {
