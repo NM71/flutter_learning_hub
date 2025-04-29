@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flutter Developer Resources</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo">
+    <i class="fab fa-flutter"></i>
+    <span>Flutter Hub</span>
+  </div>
+  <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+    <i class="fas fa-moon"></i>
+  </button>
+</nav>
+
+<header>
+  <h1>Flutter Developer Learning Hub</h1>
+  <p>Kickstart your journey with hand-picked Flutter tutorials and resources</p>
+</header>
+
+<div class="search-container">
+  <input type="text" id="searchInput" placeholder="Search by topic...">
+  <i class="fas fa-search"></i>
+</div>
+
+<div class="filters" id="filterContainer">
+  <button class="filter-btn active" data-category="all">All</button>
+  <button class="filter-btn" data-category="beginner">Beginner</button>
+  <button class="filter-btn" data-category="intermediate">Intermediate</button>
+  <button class="filter-btn" data-category="advanced">Advanced</button>
+  <button class="filter-btn" data-category="architecture">Architecture</button>
+  <button class="filter-btn" data-category="state">State Management</button>
+  <button class="filter-btn" data-category="deployment">Deployment</button>
+</div>
+
+<div class="grid" id="cardGrid">
+  <!-- Cards will be injected by JavaScript -->
+</div>
+
+<button id="backToTop" class="back-to-top" aria-label="Back to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<footer>
+  <p>🚀 Keep learning and building amazing Flutter apps!</p>
+  <p>© 2025 Flutter Developer Learning Hub</p>
+</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
