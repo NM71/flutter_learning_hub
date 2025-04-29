@@ -11,7 +11,7 @@ A modern, responsive web application that provides a curated collection of Flutt
 💾 Persistent Settings: User preferences saved between sessions
 🚀 Getting Started
 View Live Demo
-Visit the live site: Flutter Developer Learning Hub
+Visit the live site: [Flutter Developer Learning Hub](https://nm71.github.io/flutter_learning_hub/)
 
 Run Locally
 Simply clone this repository and open index.html in your browser.
